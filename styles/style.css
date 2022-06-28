@@ -1,31 +1,423 @@
 .page {
   min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
   max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
+/* если понадобится что-то обвести рамкой */
+/* .borderline {
+  border: 3px solid rgb(118, 2, 2);
+} */
+
+/* начало шапки */
 .header {
+  display: flex;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
+  background-color: #f2f2f2;
+  overflow: hidden;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+.header_position {
+  position: relative;
+}
+
+.logo {
+  height: 32px;
+  width: 228px;
+}
+
+.logo_place_header {
+  top: 30px;
+  left: 64px;
+  position: absolute;
+  z-index: 2;
+}
+
+.header__title {
+  width: 730px;
+  font-weight: 700;
+  line-height: 96px;
+  font-size: 102px;
+  margin-left: 64px;
+  align-self: center;
+  z-index: 2;
+}
+
+.header__subtitle {
+  width: 388px;
+  font-weight: 400;
+  line-height: 25px;
+  font-size: 18px;
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
+  z-index: 2;
+}
+
+.header__link {
+  text-decoration: none;
+  color: #2f80ed;
+}
+
+/* синий квадрат шапки */
 .header__square-pic {
   height: 568px;
   width: 568px;
+  background-color: #2f80ed;
+  position: absolute;
+  top: 64px;
+  right: 0;
 }
 
-/* и элемента с модификатором вида ключ-значение */
+/* картинка шапки с людьми */
+.header__main-illustation {
+  height: 608px;
+  width: 765px;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* конец шапки
+       и
+начало блока о "главных проблемах в обучении"  */
+
+.description {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.two-columns {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+
+/* колонка с синим названием */
+.two-columns__brief {
+  width: 175px;
+  margin: 0;
+  font-weight: normal;
+  line-height: 1.2;
+  font-size: 18px;
+  color: #2f80ed;
+}
+
+/* колонка с параграфами текста */
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.two-columns__paragraph {
+  font-weight: normal;
+  line-height: 34px;
+  font-size: 24px;
+  margin: 0;
+}
+
+/* если нужно будет дописать доп.параграфы и сохранить нижний отступ, кроме последнего в */
+li.paragraphs:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+/* указанное слово в параграфе станет жирним */
+.two-colums__span-accent {
+  font-weight: bold;
+}
+
+/* конец блока о "главных проблемах в обучении"
+                и
+ начало блока о "цифрах и фактах" */
+
+.digits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.section-title {
+  width: 60%;
+  text-align: center;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.section-title_theme_white {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.section-subtitle {
+  width: 60%;
+  text-align: center;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.section-subtitle_theme_white {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+/* таблица, к которой лежат ячейки */
+.table {
+  display: flex;
+  justify-content: space-between;
+  width: 1100px;
+  list-style: none;
+  padding-left: 0;
+  flex-wrap: wrap;
+}
+
+.table_theme_white {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.table__cell {
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.table__cell_theme_white {
+  margin-bottom: 0;
+  margin-top: 60px;
+  width: 250px;
+}
+
+.table__heading {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.table__heading_theme_white {
+  margin: 0;
+}
+
+.table__text {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.table__text_theme_white {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+/* конец блока о "цифрах и фактах"
+              и
+начало блока о "Фэйнмане" */
+
+.feynman {
+  display: flex;
+  flex-direction: column;
+  height: 890px;
+  background-color: #f2f2f2;
+}
+
+.feynman_position {
+  position: relative;
+}
+
+.feynman__title {
+  margin-top: 100px;
+  width: 648px;
+  line-height: 1.15x;
+  font-size: 120px;
+  font-weight: 700;
+  align-self: center;
+  text-align: center;
+  z-index: 2;
+}
+
+.feynman__subtitle {
+  margin-top: 70px;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  align-self: center;
+  z-index: 2;
+}
+
+.feynman__link {
+  position: absolute;
+  right: 48px;
+  top: 50%;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  color: #2f80ed;
+  z-index: 2;
+  text-decoration: none;
+}
+
+/* картинка с Фэйемаерм и кружком */
+.feynman__img {
+  width: 867px;
+  height: 637px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* конец блока о "Фэйнмане"
+          и
+начало блока с чёрной таблицей "Принципы обучения" */
+
+.kaufman {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: #1f1f1f;
+}
+
+.kaufman_position {
+  position: relative;
+}
+
+/* злосчастная картинка с синим треугольником */
+.kaufman__triangle {
+  height: 877px;
+  width: 877px;
+  background-image: url(/images/kaufman-triangle.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: -210px;
+  top: 0;
+}
+
+.section-title_theme_dark {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: white;
+  z-index: 1;
+}
+
+.section-subtitle_theme_dark {
+  margin-bottom: 0;
+  margin-top: 0;
+  color: white;
+  z-index: 1;
+}
+
+.table_theme_dark {
+  margin-bottom: 0;
+  margin-top: 0;
+  z-index: 1;
+}
+
 .table__cell_theme_dark {
   width: 200px;
-  color: white;
-  margin-right: 0;
+  margin-bottom: 0;
   margin-top: 80px;
+}
+
+.table__heading_theme_dark {
+  margin: 0;
+  color: white;
+}
+
+.table__text_theme_dark {
+  margin-top: 20px;
+  margin-bottom: 0;
+  color: white;
+}
+
+/* конец блока с чёрной таблицей "Принципы обучения" и общего контента
+          и
+начало подвала */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  min-height: 350px;
+  padding-bottom: 40px;
+  padding-top: 60px;
+  background-color: #1f1f1f;
+}
+
+.footer__columns {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}
+
+.footer__column {
+  margin: 0;
+}
+
+/* крайняя левая колонка с лого и автором */
+.footer__column_content-copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 711px;
+}
+
+.logo_place_footer {
+  margin-top: 0;
+  margin-left: 0;
+}
+
+.footer__author {
+  margin-bottom: 18px;
+  margin-top: 18px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+}
+
+/* центральная колонка с контентом */
+
+.footer__column-heading {
+  margin-top: 0;
+  margin-bottom: 20px;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+}
+
+.footer__column-links {
+  list-style: none;
+  margin-bottom: 16px;
+  padding-left: 0;
+}
+
+/* крайнаяя правая колонка с соц. сетями */
+.footer__column-link {
+  text-decoration: none;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+}
+
+.footer__social-icon {
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
 }
