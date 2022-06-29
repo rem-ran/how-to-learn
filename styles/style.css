@@ -6,9 +6,9 @@
 }
 
 /* если понадобится что-то обвести рамкой */
-.borderline {
+/* .borderline {
   border: 3px solid rgb(118, 2, 2);
-}
+} */
 
 /* начало шапки */
 .header {
@@ -368,8 +368,8 @@ p.two-columns__paragraph:not(:last-child) {
 }
 
 .footer__column-links {
-  list-style: none;
   margin-top: 0;
+  list-style: none;
   margin-bottom: 16px;
   padding-left: 0;
 }
