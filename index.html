@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/style.css" />
     <link rel="stylesheet" href="/styles/normalize.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
     <title>Научиться учиться</title>
   </head>
   <body class="page">
-    <header class="header header_position">
+    <header class="header">
       <!-- начало шапки -->
       <img
         class="logo logo_place_header"
@@ -16,149 +16,118 @@
         alt="Яндекс Практикум"
       />
       <h1 class="header__title">Научиться учиться</h1>
-      <h2 class="header__subtitle">
+      <p class="header__subtitle">
         Какие современные и эффективные подходы к обучению вы можете
         использовать в своей жизни?
-        <a class="header__link" href="#">Узнать →</a>
-      </h2>
+        <a class="header__link" href="#" target="_blank">Узнать &rarr;</a>
+      </p>
       <div class="header__square-pic"></div>
       <!-- синий фоновый квадратик за картинкой с людьми -->
       <img
         class="header__main-illustation"
         src="/images/header-image.png"
-        alt="Здесь должна быть картинка"
+        alt="Грустный парень и собака на переднем плане, женщина с парнишкой на втором"
       />
       <!-- картинка с людьми -->
     </header>
     <main class="content">
       <section class="description">
         <!-- начало блока о "главных проблемах в обучении" -->
-        <div class="two-columns">
-          <h3 class="two-columns__brief">Главные проблемы в обучении</h3>
-          <ul class="two-columns__main-text">
-            <li class="paragraphs">
-              <p class="two-columns__paragraph">
-                Ни в школе, ни в институте нас не учат тому, как правильно
-                изучать материал. Мы готовимся к экзаменам и учим билеты. Мы
-                тренируемся решать однообразные задачи, чтобы лучше сдать тест,
-                но часто в итоге это не дает нам реального знания. Зубрежка
-                быстро выветривается и не приносит пользы.
-              </p>
-            </li>
-            <li class="paragraphs">
-              <p class="two-columns__paragraph">
-                <span class="two-colums__span-accent">Вывод: </span>учиться тоже
-                нужно уметь, но почему-то этому мало где учат. Что с этим
-                делать?
-              </p>
-            </li>
-            <li class="paragraphs">
-              <p class="two-columns__paragraph">
-                Конкретные техники и упражнения помогают изменить подход к
-                обучению, сделать его эффективным и захватывающим. Эти же
-                техники применяются на примере обучения в Практикуме.
-              </p>
-            </li>
-          </ul>
-        </div>
+        <article class="two-columns">
+          <h2 class="two-columns__brief">Главные проблемы в обучении</h2>
+          <div class="two-columns__main-text">
+            <p class="two-columns__paragraph">
+              Ни в школе, ни в институте нас не учат тому, как правильно изучать
+              материал. Мы готовимся к экзаменам и учим билеты. Мы тренируемся
+              решать однообразные задачи, чтобы лучше сдать тест, но часто в
+              итоге это не дает нам реального знания. Зубрежка быстро
+              выветривается и не приносит пользы.
+            </p>
+            <p class="two-columns__paragraph">
+              <span class="two-columns__span-accent">Вывод: </span>учиться тоже
+              нужно уметь, но почему-то этому мало где учат. Что с этим делать?
+            </p>
+            <p class="two-columns__paragraph">
+              Конкретные техники и упражнения помогают изменить подход к
+              обучению, сделать его эффективным и захватывающим. Эти же техники
+              применяются на примере обучения в Практикуме.
+            </p>
+          </div>
+        </article>
       </section>
       <section class="digits">
         <!-- начало блока о "цифрах и фактах" -->
-        <h2 class="section-title section-title_theme_white">Цифры и факты</h2>
-        <h3 class="section-subtitle section-subtitle_theme_white">
-          Про учёбу и мозг
-        </h3>
-        <ul class="table table_theme_white">
-          <li class="table__cell table__cell_theme_white">
-            <h3 class="table__heading table__heading_theme_white">
-              86 миллиардов
-            </h3>
-            <p class="table__text table__text_theme_white">
-              Число нейронов в мозге человека
-            </p>
+        <h2 class="section-title">Цифры и факты</h2>
+        <p class="section-subtitle">Про учёбу и мозг</p>
+        <ul class="table">
+          <li class="table__cell">
+            <h3 class="table__heading">86 миллиардов</h3>
+            <p class="table__text">Число нейронов в мозге человека</p>
           </li>
-          <li class="table__cell table__cell_theme_white">
-            <h3 class="table__heading table__heading_theme_white">
-              2.1 миллиарда
-            </h3>
-            <p class="table__text table__text_theme_white">
+          <li class="table__cell">
+            <h3 class="table__heading">2.1 миллиарда</h3>
+            <p class="table__text">
               Число нуждающихся в повышении квалификации
             </p>
-            <p class="table__text table__text_theme_white">
-              Всемирный Банк, 2017
-            </p>
+            <p class="table__text">Всемирный Банк, 2017</p>
           </li>
-          <li class="table__cell table__cell_theme_white">
-            <h3 class="table__heading table__heading_theme_white">
-              1000 терабайт
-            </h3>
-            <p class="table__text table__text_theme_white">
-              Объём памяти человека
-            </p>
+          <li class="table__cell">
+            <h3 class="table__heading">1000 терабайт</h3>
+            <p class="table__text">Объём памяти человека</p>
           </li>
-          <li class="table__cell table__cell_theme_white">
-            <h3 class="table__heading table__heading_theme_white">
-              500 триллионов
-            </h3>
-            <p class="table__text table__text_theme_white">
+          <li class="table__cell">
+            <h3 class="table__heading">500 триллионов</h3>
+            <p class="table__text">
               Число ответственных за обучение нервных синапсов у взрослого
               человека
             </p>
           </li>
-          <li class="table__cell table__cell_theme_white">
-            <h3 class="table__heading table__heading_theme_white">
-              420 миллионов
-            </h3>
-            <p class="table__text table__text_theme_white">
+          <li class="table__cell">
+            <h3 class="table__heading">420 миллионов</h3>
+            <p class="table__text">
               Число взрослых людей моложе 25 лет, не имеющих образования для
               трудоустройства
             </p>
-            <p class="table__text table__text_theme_white">
-              Всемирный Банк, 2017
-            </p>
+            <p class="table__text">Всемирный Банк, 2017</p>
           </li>
-          <li class="table__cell table__cell_theme_white">
-            <h3 class="table__heading table__heading_theme_white">17–20 лет</h3>
-            <p class="table__text table__text_theme_white">Пик обучаемости</p>
+          <li class="table__cell">
+            <h3 class="table__heading">17–20 лет</h3>
+            <p class="table__text">Пик обучаемости</p>
           </li>
-          <li class="table__cell table__cell_theme_white">
-            <h3 class="table__heading table__heading_theme_white">1885 год</h3>
-            <p class="table__text table__text_theme_white">
-              Открытие кривой забывания
-            </p>
+          <li class="table__cell">
+            <h3 class="table__heading">1885 год</h3>
+            <p class="table__text">Открытие кривой забывания</p>
           </li>
-          <li class="table__cell table__cell_theme_white">
-            <h3 class="table__heading table__heading_theme_white">1889 год</h3>
-            <p class="table__text table__text_theme_white">
-              Открытие условного рефлекса
-            </p>
+          <li class="table__cell">
+            <h3 class="table__heading">1889 год</h3>
+            <p class="table__text">Открытие условного рефлекса</p>
           </li>
         </ul>
       </section>
-      <section class="feynman feynman_position">
+      <section class="feynman">
         <!-- начало блока о "Фэйнмане" -->
-        <h1 class="feynman__title">Метод Фейнмана</h1>
-        <h3 class="feynman__subtitle">Выучить и не забыть.</h3>
-        <a class="feynman__link" href="#">Подробнее →</a>
+        <h2 class="feynman__title">Метод Фейнмана</h2>
+        <p class="feynman__subtitle">Выучить и не забыть.</p>
+        <a class="feynman__link" href="#" target="_blank">Подробнее &rarr;</a>
         <img
           class="feynman__img"
           src="/images/feynman.png"
-          alt="Здесь должна быть фотка Фэйнмана"
+          alt="Чёрно-белая фотография улыбающегося Фэйнмана на фоне синего круга"
         />
         <!-- картинка с Фэйнманом и кружком -->
       </section>
-      <section class="kaufman kaufman_position">
+      <section class="kaufman">
         <!-- начало блока с чёрной таблицей "Принципы обучения" -->
-        <div class="kaufman__triangle kaufman__triangle_position"></div>
+        <div class="kaufman__triangle"></div>
         <h2 class="section-title section-title_theme_dark">
           Принципы обучения
         </h2>
-        <h3 class="section-subtitle section-subtitle_theme_dark">
+        <p class="section-subtitle section-subtitle_theme_dark">
           от Джоша Кауфмана
-        </h3>
+        </p>
         <ul class="table table_theme_dark">
           <li class="table__cell table__cell_theme_dark">
-            <h3 class="table__heading_theme_dark">1</h3>
+            <h3 class="table__heading table__heading_theme_dark">1</h3>
             <p class="table__text table__text_theme_dark">
               Выберите привлекательный проект.
             </p>
@@ -223,16 +192,16 @@
     <footer class="footer">
       <!-- начало подвала -->
       <div class="footer__columns">
-        <div class="footer__column footer__column_content-copyright">
+        <div class="footer__column footer__column_content_copyright">
           <!-- колонка с лого и автором -->
           <img
             class="logo logo_place_footer"
             src="/images/logo_place_footer.svg"
             alt="Яндекс Практикум"
           />
-          <h4 class="footer__author">&copy; Руслан Тимербулатов</h4>
+          <p class="footer__author">&copy; Руслан Тимербулатов</p>
         </div>
-        <nav class="footer__column footer__column_content-info">
+        <nav class="footer__column footer__column_content_info">
           <!-- колонка со списком контента (ссылки) -->
           <h4 class="footer__column-heading">О Практикуме</h4>
           <ul class="footer__column-links">
@@ -241,7 +210,7 @@
             <li><a class="footer__column-link" href="#">Наставники</a></li>
           </ul>
         </nav>
-        <nav class="footer__column footer__column_content-social">
+        <nav class="footer__column footer__column_content_social">
           <!-- колонка со списком соцсетей (ссылки) -->
           <h4 class="footer__column-heading">Соцсети</h4>
           <ul class="footer__column-links">
@@ -250,7 +219,7 @@
                 <img
                   class="footer__social-icon"
                   src="/images/facebook_color_white.svg"
-                  alt="иконка"
+                  alt=""
                 />Facebook</a
               >
             </li>
@@ -259,7 +228,7 @@
                 <img
                   class="footer__social-icon"
                   src="/images/vk_color_white.svg"
-                  alt="иконка"
+                  alt=""
                 />ВКонтакте</a
               >
             </li>
@@ -268,7 +237,7 @@
                 <img
                   class="footer__social-icon"
                   src="/images/instagram_color_white.svg"
-                  alt="иконка"
+                  alt=""
                 />Instagram</a
               >
             </li>
