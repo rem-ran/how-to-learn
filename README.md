@@ -1,4 +1,4 @@
-![Alt-текст](https://disk.yandex.com/i/IOXQffzS6FLZjA)
+![Alt-текст][(https://disk.yandex.com/i/IOXQffzS6FLZjA)]
 
 # Проектная работа №2
 
