@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles/normalize.css" />
-    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/pages/index.css" />
+    <!-- <link rel="stylesheet" href="/styles/style.css" /> -->
     <title>Научиться учиться</title>
   </head>
   <body class="page">
+    <!-- начало шапки -->
     <header class="header">
-      <!-- начало шапки -->
       <img
         class="logo logo_place_header"
         src="/images/logo_place_header.svg"
@@ -19,9 +20,11 @@
       <p class="header__subtitle">
         Какие современные и эффективные подходы к обучению вы можете
         использовать в своей жизни?
-        <a class="header__link" href="#" target="_blank">Узнать &rarr;</a>
+        <a class="header__link link-transform" href="#" target="_blank"
+          >Узнать &rarr;</a
+        >
       </p>
-      <div class="header__square-pic"></div>
+      <div class="header__square-pic rotation"></div>
       <!-- синий фоновый квадратик за картинкой с людьми -->
       <img
         class="header__main-illustation"
@@ -31,8 +34,8 @@
       <!-- картинка с людьми -->
     </header>
     <main class="content">
+      <!-- начало блока о "главных проблемах в обучении" -->
       <section class="description">
-        <!-- начало блока о "главных проблемах в обучении" -->
         <article class="two-columns">
           <h2 class="two-columns__brief">Главные проблемы в обучении</h2>
           <div class="two-columns__main-text">
@@ -55,60 +58,119 @@
           </div>
         </article>
       </section>
-      <section class="digits">
-        <!-- начало блока о "цифрах и фактах" -->
-        <h2 class="section-title">Цифры и факты</h2>
-        <p class="section-subtitle">Про учёбу и мозг</p>
-        <ul class="table">
-          <li class="table__cell">
-            <h3 class="table__heading">86 миллиардов</h3>
-            <p class="table__text">Число нейронов в мозге человека</p>
-          </li>
-          <li class="table__cell">
-            <h3 class="table__heading">2.1 миллиарда</h3>
-            <p class="table__text">
-              Число нуждающихся в повышении квалификации
-            </p>
-            <p class="table__text">Всемирный Банк, 2017</p>
-          </li>
-          <li class="table__cell">
-            <h3 class="table__heading">1000 терабайт</h3>
-            <p class="table__text">Объём памяти человека</p>
-          </li>
-          <li class="table__cell">
-            <h3 class="table__heading">500 триллионов</h3>
-            <p class="table__text">
-              Число ответственных за обучение нервных синапсов у взрослого
-              человека
+      <!-- начало блока о техниках обучения -->
+      <section class="techniques">
+        <h2 class="section-title">Техники обучения</h2>
+        <p class="section-subtitle">Пять практик от Барбары Оакли</p>
+        <ul class="cards">
+          <li class="cards__item">
+            <img
+              class="cards__image"
+              src="/images/cards-attention.png"
+              alt="Руки держат белую книгу с заголовком чёрным шрифтом на анлийском языке над столом"
+            />
+            <h3 class="cards__title">Два вида внимания</h3>
+            <p class="cards__description">
+              Глубокие знания возникают, если чередовать сфокусированное и
+              рассеянное мышление.
             </p>
           </li>
-          <li class="table__cell">
-            <h3 class="table__heading">420 миллионов</h3>
-            <p class="table__text">
-              Число взрослых людей моложе 25 лет, не имеющих образования для
-              трудоустройства
+          <li class="cards__item">
+            <img
+              class="cards__image"
+              src="/images/cards-recall.png"
+              alt="Белая статуя оголённого по пояс мальчика в античном стиле"
+            />
+            <h3 class="cards__title">Recall</h3>
+            <p class="cards__description">
+              Вспоминайте изученное — это позволит соединить разрозненные порции
+              памяти.
             </p>
-            <p class="table__text">Всемирный Банк, 2017</p>
           </li>
-          <li class="table__cell">
-            <h3 class="table__heading">17–20 лет</h3>
-            <p class="table__text">Пик обучаемости</p>
+          <li class="cards__item">
+            <img
+              class="cards__image"
+              src="/images/cards-interliving.png"
+              alt="Черно белая фотография большого зала, где ходят люди. Вдоль стен балки, похожие на ванты мостов"
+            />
+            <h3 class="cards__title">Интерливинг</h3>
+            <p class="cards__description">
+              Изучайте несколько навыков одновременно, они обогащают друг друга.
+            </p>
           </li>
-          <li class="table__cell">
-            <h3 class="table__heading">1885 год</h3>
-            <p class="table__text">Открытие кривой забывания</p>
+          <li class="cards__item">
+            <img
+              class="cards__image"
+              src="/images/cards-question.png"
+              alt="Черно белая фотография сверху большого квадратного помещения с белыми стенами и окнами и с одним человеком в чёрном"
+            />
+            <h3 class="cards__title">Вопросы</h3>
+            <p class="cards__description">
+              Слушая преподавателя, придумывайте хороший вопрос, который вас
+              действительно волнует.
+            </p>
           </li>
-          <li class="table__cell">
-            <h3 class="table__heading">1889 год</h3>
-            <p class="table__text">Открытие условного рефлекса</p>
+          <li class="cards__item">
+            <img
+              class="cards__image"
+              src="/images/cards-competence.png"
+              alt="Рука на ладони держит стопку из нескольких книг разного цвета на белом фоне"
+            />
+            <h3 class="cards__title">Иллюзия компетентности</h3>
+            <p class="cards__description">
+              Повторите про себя, запишите, расскажите другу: вам только
+              кажется, что вы владеете новой темой.
+            </p>
           </li>
         </ul>
       </section>
+      <!-- начало блока с видео -->
+      <section class="video">
+        <h2 class="section-title">Видео нa TED</h2>
+        <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
+        <div class="video__iframes">
+          <iframe
+            class="video__iframe"
+            type="text/html"
+            src="https://www.youtube.com/embed/5MgBikgcWnY"
+            allowfullscreen
+            >Ваш браузер не поддерживает фреймы!
+          </iframe>
+          <iframe
+            class="video__iframe"
+            type="text/html"
+            src="https://www.youtube.com/embed/arj7oStGLkU"
+            allowfullscreen
+          >
+            Ваш браузер не поддерживает фреймы!
+          </iframe>
+        </div>
+      </section>
+      <!-- начало блока о "Оакли" -->
+      <section class="oakley">
+        <article class="two-columns">
+          <h2 class="two-columns__brief">История Барбары Оакли.</h2>
+          <div class="two-columns__main-text">
+            <p class="two-columns__paragraph">
+              С детства Барбаре не давалась математика. Она считала себя
+              законченным гуманитарием, причём далеко не самым умным. В армии
+              она изучала русский язык, чтобы получить надбавку, да так успешно,
+              что её выдвинули в командиры. Но для продвижения по службе нужно
+              было сдавать математику. И тогда Барбара придумала свой подход к
+              точным наукам. Оказалось, если вам что-то «плохо даётся», ваши
+              добытые трудом знания гораздо глубже, чем у тех, кому всё ясно с
+              первого взгляда.
+            </p>
+          </div>
+        </article>
+      </section>
+      <!-- начало блока о "Фэйнмане" -->
       <section class="feynman">
-        <!-- начало блока о "Фэйнмане" -->
         <h2 class="feynman__title">Метод Фейнмана</h2>
         <p class="feynman__subtitle">Выучить и не забыть.</p>
-        <a class="feynman__link" href="#" target="_blank">Подробнее &rarr;</a>
+        <a class="feynman__link link-transform" href="#" target="_blank"
+          >Подробнее &rarr;</a
+        >
         <img
           class="feynman__img"
           src="/images/feynman.png"
@@ -116,9 +178,84 @@
         />
         <!-- картинка с Фэйнманом и кружком -->
       </section>
+      <!-- начало блока о "цифрах и фактах" -->
+      <section class="digits">
+        <h3 class="section-title">Цифры и факты</h3>
+        <p class="section-subtitle">Про учёбу и мозг</p>
+        <ul class="table">
+          <li class="table__cell">
+            <h4 class="table__heading">86 миллиардов</h4>
+            <p class="table__text">Число нейронов в мозге человека</p>
+          </li>
+          <li class="table__cell">
+            <h4 class="table__heading">2.1 миллиарда</h4>
+            <p class="table__text">
+              Число нуждающихся в повышении квалификации
+            </p>
+            <p class="table__text">Всемирный Банк, 2017</p>
+          </li>
+          <li class="table__cell">
+            <h4 class="table__heading">1000 терабайт</h4>
+            <p class="table__text">Объём памяти человека</p>
+          </li>
+          <li class="table__cell">
+            <h4 class="table__heading">500 триллионов</h4>
+            <p class="table__text">
+              Число ответственных за обучение нервных синапсов у взрослого
+              человека
+            </p>
+          </li>
+          <li class="table__cell">
+            <h4 class="table__heading">420 миллионов</h4>
+            <p class="table__text">
+              Число взрослых людей моложе 25 лет, не имеющих образования для
+              трудоустройства
+            </p>
+            <p class="table__text">Всемирный Банк, 2017</p>
+          </li>
+          <li class="table__cell">
+            <h4 class="table__heading">17–20 лет</h4>
+            <p class="table__text">Пик обучаемости</p>
+          </li>
+          <li class="table__cell">
+            <h4 class="table__heading">1885 год</h4>
+            <p class="table__text">Открытие кривой забывания</p>
+          </li>
+          <li class="table__cell">
+            <h4 class="table__heading">1889 год</h4>
+            <p class="table__text">Открытие условного рефлекса</p>
+          </li>
+        </ul>
+      </section>
+      <!-- начало блока c книгой Сальмана Хана -->
+      <section class="khan">
+        <div class="khan__container">
+          <p class="khan__author">Салман Хан</p>
+          <h2 class="khan__title">Весь мир — школа</h2>
+          <blockquote class="khan__quote">
+            Страсть и новаторство Сала Хана меняют процесс обучения миллионов
+            студентов по всему миру. Книгу «Весь мир — школа» нужно прочитать
+            всем, кто занимается образованием — так учащиеся повсюду смогут
+            получить навыки и знания, которые приносят успех в школе, карьере и
+            жизни.
+          </blockquote>
+          <p class="khan__quote-author">Джордж Лукас</p>
+          <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
+          <div class="khan__book-container">
+            <img
+              class="khan__book-pic"
+              src="/images/khan-book.jpg"
+              alt="Обложка книги Весь мир-школа. Автор Сальман Хан. "
+            />
+            <a class="khan__buy-link link-transform" href="#" target="_blank"
+              >Купить книгу &rarr;</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- начало блока с чёрной таблицей "Принципы обучения" -->
       <section class="kaufman">
-        <!-- начало блока с чёрной таблицей "Принципы обучения" -->
-        <div class="kaufman__triangle"></div>
+        <div class="kaufman__triangle rotation"></div>
         <h2 class="section-title section-title_theme_dark">
           Принципы обучения
         </h2>
@@ -188,12 +325,59 @@
           </li>
         </ul>
       </section>
+      <!-- начало блока с полезными ссылками -->
+      <section class="resources">
+        <h4 class="section-title">Полезные ресурсы</h4>
+        <p class="section-subtitle">
+          Больше материалов о техниках и лайфхаках обучения
+        </p>
+        <ul class="resources__logo-zone">
+          <li class="resources__link">
+            <a href="#" target="_blank"
+              ><img
+                class="resources__logo link-transform"
+                href="#"
+                target="_blank"
+                src="/images/resources-arzamas.svg"
+                alt="Логотип Arzamas"
+            /></a>
+          </li>
+          <li class="resources__link">
+            <a href="#" target="_blank"
+              ><img
+                class="resources__logo link-transform"
+                href="#"
+                target="_blank"
+                src="/images/resources-n1.svg"
+                alt="Логотип N+1"
+            /></a>
+          </li>
+          <li class="resources__link">
+            <a href="#" target="_blank"
+              ><img
+                class="resources__logo link-transform"
+                href="#"
+                target="_blank"
+                src="/images/resources-strelka.svg"
+                alt="Логотип Strelka"
+            /></a>
+          </li>
+          <li class="resources__link">
+            <a href="#" target="_blank"
+              ><img
+                class="resources__logo link-transform"
+                src="/images/resources-polka.svg"
+                alt="Логотип Полка"
+            /></a>
+          </li>
+        </ul>
+      </section>
     </main>
+    <!-- начало подвала -->
     <footer class="footer">
-      <!-- начало подвала -->
       <div class="footer__columns">
+        <!-- колонка с лого и автором -->
         <div class="footer__column footer__column_content_copyright">
-          <!-- колонка с лого и автором -->
           <img
             class="logo logo_place_footer"
             src="/images/logo_place_footer.svg"
@@ -201,53 +385,74 @@
           />
           <p class="footer__author">&copy; Руслан Тимербулатов</p>
         </div>
+        <!-- колонка со списком контента (ссылки) -->
         <nav class="footer__column footer__column_content_info">
-          <!-- колонка со списком контента (ссылки) -->
-          <h4 class="footer__column-heading">О Практикуме</h4>
+          <h5 class="footer__column-heading">О Практикуме</h5>
           <ul class="footer__column-links">
             <li>
-              <a class="footer__column-link" href="#" target="_blank"
+              <a
+                class="footer__column-link link-transform"
+                href="#"
+                target="_blank"
                 >Главная</a
               >
             </li>
             <li>
-              <a class="footer__column-link" href="#" target="_blank"
+              <a
+                class="footer__column-link link-transform"
+                href="#"
+                target="_blank"
                 >Концепция</a
               >
             </li>
             <li>
-              <a class="footer__column-link" href="#" target="_blank"
+              <a
+                class="footer__column-link link-transform"
+                href="#"
+                target="_blank"
                 >Наставники</a
               >
             </li>
           </ul>
         </nav>
+        <!-- колонка со списком соцсетей (ссылки) -->
         <nav class="footer__column footer__column_content_social">
-          <!-- колонка со списком соцсетей (ссылки) -->
-          <h4 class="footer__column-heading">Соцсети</h4>
+          <h5 class="footer__column-heading">Соцсети</h5>
           <ul class="footer__column-links">
             <li>
-              <a class="footer__column-link" href="#" target="_blank">
+              <a
+                class="footer__column-link link-transform"
+                href="#"
+                target="_blank"
+              >
                 <img
-                  class="footer__social-icon"
+                  class="footer__social-icon link-transform"
                   src="/images/facebook_color_white.svg"
                   alt="Иконка"
                 />Facebook</a
               >
             </li>
             <li>
-              <a class="footer__column-link" href="#" target="_blank">
+              <a
+                class="footer__column-link link-transform"
+                href="#"
+                target="_blank"
+              >
                 <img
-                  class="footer__social-icon"
+                  class="footer__social-icon link-transform"
                   src="/images/vk_color_white.svg"
                   alt="Иконка"
                 />ВКонтакте</a
               >
             </li>
             <li>
-              <a class="footer__column-link" href="#" target="_blank">
+              <a
+                class="footer__column-link link-transform"
+                href="#"
+                target="_blank"
+              >
                 <img
-                  class="footer__social-icon"
+                  class="footer__social-icon link-transform"
                   src="/images/instagram_color_white.svg"
                   alt="Иконка"
                 />Instagram</a
