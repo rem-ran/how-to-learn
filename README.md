@@ -1,4 +1,4 @@
-![Alt-текст](https://github.com/rem-ran/how-to-learn/blob/main/screenshot%20fot%20reame.png)
+![Alt-текст](https://github.com/rem-ran/how-to-learn/blob/main/screenshot%20fot%20readme.png)
 
 # Проектная работа №2
 
