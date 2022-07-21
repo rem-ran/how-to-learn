@@ -8,3 +8,7 @@
 .two-columns__paragraph:not(:last-child) {
   margin-bottom: 30px;
 }
+
+.line {
+  outline: solid 2px red;
+}
